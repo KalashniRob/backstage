@@ -9,7 +9,7 @@ metadata:
     - frontend
     - template
 spec:
-  owner: user:guest
+  owner: robert.c.matei
   type: website
   path: /templates/angular-app-template
   parameters:
