@@ -26,7 +26,7 @@ spec:
         workingDirectory: .
         command: npx
         args:
-          - !!python/str "@angular/cli"
+          - ng
           - new
           - ${{ parameters.projectName }}
           - --defaults
