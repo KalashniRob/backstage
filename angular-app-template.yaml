@@ -1,4 +1,25 @@
-steps:
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: angular-app-template
+  title: Example Angular Template
+  description: An example template for the scaffolder that creates a simple Angular application
+  tags:
+    - angular
+    - frontend
+    - template
+spec:
+  owner: user:guest
+  type: website
+  path: /templates/angular-app-template
+  parameters:
+    - title: Project Name
+      description: Enter the name of your Angular project
+      required: true
+    - title: Description
+      description: Enter a short description of your Angular app
+      required: true
+  steps:
   - id: fetch
     name: Fetch Template Repository
     action: fetch:template
@@ -45,3 +66,9 @@ steps:
     action: debug:log
     input:
       message: "Successfully wrote all files!"
+
+    - id: log
+      name: Log Success
+      action: debug:log
+      input:
+        message: "Angular app template successfully customized!"
