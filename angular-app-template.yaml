@@ -5,9 +5,9 @@ metadata:
   title: Example Angular Template
   description: An example template for the scaffolder that creates a simple Angular application
   tags:
-  - angular
-  - frontend
-  - template
+    - angular
+    - frontend
+    - template
 spec:
   owner: user:guest
   type: website
