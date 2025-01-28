@@ -24,7 +24,7 @@ spec:
       name: Fetch Template Repository
       action: fetch:template
       input:
-        url: https://github.com/your-repo/angular-template
+        url: https://github.com/KalashniRob/backstage/edit/main/angular-app-template.yaml
         targetPath: .
     - id: write-angular-json
       name: Write angular.json
